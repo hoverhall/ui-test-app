@@ -6,6 +6,9 @@
   justify-content: center;
   background-color: #E5E5E5;
 }
+.App.scrolloff {
+  overflow: hidden;
+}
 
 .products-list {
   display: grid;

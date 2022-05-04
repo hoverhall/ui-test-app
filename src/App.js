@@ -46,14 +46,16 @@ function App() {
   const buy = (index) => {
     setCardData(localData[index])
     setCardOpened(true)
+    document.body.style.overflowY = 'hidden'
   }
 
   const close = () => {
     setCardOpened(false)
+    document.body.style.overflowY = 'scroll'
   }
 
   return (
-    <div className="App">
+    <div className='App'>
       <div className='products-list'>
         {localData.length ? localData.map((item, i) => (
             <ProductsItem key={i} productData={{...item, index: i}} buy={buy}/>
