@@ -55,9 +55,9 @@ function App() {
   return (
     <div className="App">
       <div className='products-list'>
-        {localData.length && localData.map((item, i) => (
+        {localData.length ? localData.map((item, i) => (
             <ProductsItem key={i} productData={{...item, index: i}} buy={buy}/>
-        ))}
+        )) : <></> }
         <button onClick={buyCheapest}>Buy cheapest</button>
       </div>
       {cardOpened && <Product cardData={cardData} close={close} />}

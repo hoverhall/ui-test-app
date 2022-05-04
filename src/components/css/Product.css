@@ -9,6 +9,10 @@
     right: 0;
     bottom: 0;
 
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+
     background-color: #000000c5;
 }
 
